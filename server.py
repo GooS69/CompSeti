@@ -2,7 +2,7 @@ import socket
 
 sock = socket.socket()
 
-sock.bind(('', 5050))
+sock.bind(('localhost', 5050))
 sock.listen(1)
 
 conn, addr = sock.accept()
